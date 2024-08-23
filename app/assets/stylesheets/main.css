@@ -1,0 +1,12 @@
+.text-primary {
+    display: none;
+}
+
+.visible {
+    display: none;
+}
+
+.highlight {
+    color: green;
+    background-color: hotpink;
+}

@@ -1,0 +1,35 @@
+<h1>Stimulus exercise Odin</h1>
+
+<div data-controller='hello toggle'
+     data-toggle-primary-class='text-primary'>
+  <button data-action='toggle#visible'>
+    Show/Hide text
+  </button>
+  <p data-hello-target='source' class='text' data-toggle-target='text'>Find me in app/views/hello/index.html.erb</p>
+</div>
+
+<div data-controller='toggle'
+     data-toggle-visible-class='visible'>
+  <button data-action='toggle#show'> hide/show Dropdown </button>
+  <select name="cars" id="cars" class='text' data-toggle-target='text'>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</div>
+
+<div data-controller='toggle'
+     data-toggle-visible-class='visible'>
+  <button data-action='toggle#change'>
+    Switch between first and second
+  </button>
+  <p class='text' data-toggle-target='slide'>First</p>
+  <p class='text' data-toggle-target='slide'>Second</p>
+</div>
+
+<div data-controller='toggle'
+      data-toggle-highlight-class='highlight'>
+  <input data-action='toggle#mark' data type="checkbox" id="scales" name="scales" />
+  <label data-toggle-target='label' for="scales">Scales</label>
+</div>
