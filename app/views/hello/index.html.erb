@@ -33,3 +33,12 @@
   <input data-action='toggle#mark' data type="checkbox" id="scales" name="scales" />
   <label data-toggle-target='label' for="scales">Scales</label>
 </div>
+
+<br>
+<div data-controller='limit-length'
+      data-limit-length-highlight-class='highlight'>
+  <label for="sometext">This input limits your text to 50 characters:</label>
+  <input type='text' data-limit-length-target='input' data-action='limit-length#check' id="sometext" name="sometext" maxlength="50" size='50' style='padding: 5px'/>
+  <div data-limit-length-target='text'></div><br>
+  <input type="submit" value="Submit">
+</div>
